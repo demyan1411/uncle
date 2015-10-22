@@ -1,0 +1,46 @@
+/* defaul style */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+address {
+  font-style: normal; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+input, textarea {
+  outline: none;
+  border: none; }
+
+html, body {
+  font-family: "Verdana";
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  height: 100%; }
+
+body {
+  position: relative; }
+
+.main {
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box; }
+
+.main__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 595px; }

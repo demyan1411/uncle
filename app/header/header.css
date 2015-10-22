@@ -1,0 +1,25 @@
+.header {
+  background: url(img/header-bg.jpg) 0 0 no-repeat;
+  background-size: cover; }
+  .header__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    box-sizing: border-box; }
+    .header__wrapper:before, .header__wrapper:after {
+      content: " ";
+      display: table; }
+    .header__wrapper:after {
+      clear: both; }
+  .header__logo {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    max-height: 178px;
+    height: auto;
+    margin: 0 auto; }
+    .header__logo-img {
+      display: block;
+      width: 100%;
+      height: auto; }

@@ -1,0 +1,24 @@
+.advantages {
+  width: 100%;
+  background-color: #485c98;
+  text-align: center;
+  font-size: 0; }
+  .advantages__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 -20px;
+    display: inline-block; }
+    .advantages__wrapper:before, .advantages__wrapper:after {
+      content: " ";
+      display: table; }
+    .advantages__wrapper:after {
+      clear: both; }
+  .advantages__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    margin: 25px 40px; }

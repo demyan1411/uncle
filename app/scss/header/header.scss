@@ -1,0 +1,59 @@
+@import "../mixins";
+
+.header {
+	width: 100%;
+	background: url(img/header-bg.jpg) center 0 no-repeat;
+	background-size: cover;
+	//height: 100%;
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+	}
+	&__logo {
+			display: block;
+			width: 100%;
+			max-width: 560px;
+			max-height: 178px;
+			margin: 0 auto;
+			margin-bottom: 12px;
+		&-img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__title {
+		font-size: 0;
+		width: 100%;
+		max-width: 615px;
+		max-height: 197px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+
+		&-img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__rel-block {
+		position: relative;
+		margin-bottom: 430px;
+	}
+	&__stiker {
+		position: absolute;
+	    display: block;
+	    max-width: 177px;
+	    width: 20%;
+	    height: 20%;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    margin-top: -1px;
+	    margin-left: -296px;
+		&-img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@import "mixins";
+
+.advantages {
+	width: 100%;
+	background-color: #485c98;
+	text-align: center;
+	font-size: 0;
+
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+		margin: 0 -20px;
+		display: inline-block;
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 100px;
+		height: 100px;
+		margin: 25px 40px;
+	}
+}
