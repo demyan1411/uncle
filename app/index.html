@@ -25,16 +25,27 @@
     
   </head>
   <body>
-    <section class="header">
+    <section id="menu" class="menu">
+      <div class="menu__wrapper"><a href="" class="menu__logo"><img src="img/menu__logo.png" class="menu__logoImg"></a>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" data-anchor="brand" class="menu__link">О бренде</a></li>
+          <li class="menu__item"><a href="" data-anchor="products" class="menu__link">Наши продукты</a></li>
+          <li class="menu__item"><a href="" data-anchor="recipes" class="menu__link">Рецепты</a></li>
+          <li class="menu__item"><a href="" data-anchor="presents" class="menu__link">Акции</a></li>
+          <li class="menu__item"><a href="" data-anchor="map" class="menu__link">Контакты</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="header" class="header">
       <div class="header__wrapper"><a href="" class="header__logo"><img src="img/logo.png" alt="logo" class="header__logo-img"></a>
         <h1 class="header__title">Свежие овощи из Сибири<img src="img/header-title.png" alt="header-title" class="header__title-img"></h1>
         <div class="header__rel-block"><a href="" class="header__stiker"><img src="img/stiker.png" alt="stiker" class="header__stiker-img"></a></div>
       </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <div class="advantages__wrapper"><img src="img/advantages__img1.png" alt="" class="advantages__img advantages__img1"><img src="img/advantages__img2.png" alt="" class="advantages__img advantages__img2"><img src="img/advantages__img3.png" alt="" class="advantages__img advantages__img3"><img src="img/advantages__img4.png" alt="" class="advantages__img advantages__img4"><img src="img/advantages__img5.png" alt="" class="advantages__img advantages__img5"></div>
     </section>
-    <section class="brand">
+    <section id="brand" class="brand section">
       <div class="brand__wrapper">
         <div class="brand__column brand__column--left">
           <h2 class="brand__title"><span class="brand__title--big">О бренде</span><span class="brand__title--small">
@@ -46,7 +57,7 @@
         <div class="brand__column brand__column--right"><img src="img/brand__right.jpg" alt="" class="brand__imgRight"></div>
       </div>
     </section>
-    <section class="products">
+    <section id="products" class="products">
       <div class="products__wrapper">
         <div class="products__title">Наши продукты</div>
         <div class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
@@ -73,7 +84,7 @@
           <div class="products__block-name">Свекла</div><img src="img/products__img7.jpg" alt="" class="products__img"></a>
       </div>
     </section>
-    <section class="recipes">
+    <section id="recipes" class="recipes">
       <div class="recipes__wrapper">
         <div class="recipes__title">Рецепты</div>
         <div class="recipes__slider">
@@ -174,6 +185,66 @@
       </div>
       <div id="map-canvas"></div>
     </section>
+    <button class="popup">
+      <div class="popup__block">
+        <div class="popup__close"></div>
+        <div class="popup__change">
+          <div class="popup__header">
+            <div class="popup__left">
+              <div class="popup__name">рецепт</div>
+              <div class="popup__title">Картофель с&nbsp;розмарином</div>
+              <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
+            </div>
+            <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
+          </div>
+          <div class="popup__main">
+            <div class="popup__left">
+              <div class="popup__h2">Ингредиенты</div>
+              <ul class="popup__list">
+                <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного </li>
+                <li class="popup__item">2 десертные ложки масла </li>
+                <li class="popup__item">4 зубчика чеснока </li>
+                <li class="popup__item">4 ст ложки резанного розмарина </li>
+                <li class="popup__item">1 десертная ложка соли </li>
+                <li class="popup__item">противень 50х30 см</li>
+                <li class="popup__item">духовку разогреваем до 230 градусов</li>
+              </ul>
+            </div>
+            <div class="popup__right">
+              <div class="popup__h2">Рецепт приготовления</div>
+              <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+              <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+              <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+              <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+            </div>
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="popup__line">Еще рецепты</div>
+          <div class="popup__recipe">
+            <div class="popup__recipeTitle">рецепт</div>
+            <div class="popup__recipeName">Картофель запечённый в сметане</div>
+            <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+              <div class="btn">Подробнее</div>
+            </div>
+          </div>
+          <div class="popup__recipe">
+            <div class="popup__recipeTitle">рецепт</div>
+            <div class="popup__recipeName">Картофель запечённый в сметане</div>
+            <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+              <div class="btn">Подробнее</div>
+            </div>
+          </div>
+          <div class="popup__recipe">
+            <div class="popup__recipeTitle">рецепт</div>
+            <div class="popup__recipeName">Картофель запечённый в сметане</div>
+            <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+              <div class="btn">Подробнее</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </button>
     <script>
       var ms=document.createElement("link");ms.rel="stylesheet";
       ms.href="_main.min.css";document.getElementsByTagName("head")[0].appendChild(ms);

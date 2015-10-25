@@ -133,3 +133,76 @@ var select = (function() {
   });
 
 })();
+
+(function(){
+   var advTop = $('#advantages').offset().top,
+       menuHeight = $('#menu').height(),
+       anchorFlag = true;
+
+  $('[data-anchor]').each(function(){
+    var anchor = $(this).data('anchor');
+    var anchorTop = $('#' + anchor).offset().top;
+    $('#' + anchor).addClass('section__active');
+  });
+  
+
+  $(window).scroll(function(){
+
+    var winST = $(window).scrollTop(),
+        winHeight = $(window).height(),
+        winBotST = winST + winHeight;
+        
+    if(winST >= advTop) {
+      $('#menu').addClass('menu__active');
+    } else {
+      $('#menu').removeClass('menu__active');
+    }
+
+    $('.section__active').each(function() {
+      var thisTop = $(this).offset().top,
+          thisHeight = $(this).outerHeight();
+
+      if( winBotST > thisTop + (thisHeight/2) && winST + menuHeight < thisTop + (thisHeight/2) ) {
+        
+        var thisId = $(this).attr('id');
+        if(anchorFlag === true) {
+          $('[data-anchor]').removeClass('menu__link--active');
+          $('[data-anchor="' + thisId + '"]').addClass('menu__link--active');
+
+          if(window.location.hash != ('#' + thisId) ) {
+            window.history.replaceState({}, '', '#' + thisId);
+          }
+        }
+
+        
+      }
+    });
+
+  });
+
+  $('.menu__link').on('click', function(e) {
+    e.preventDefault();
+    anchorFlag = false;
+    var anchor = $(this).data('anchor'),
+        to = $('#' + anchor).offset().top - menuHeight;
+    $("html, body").animate({scrollTop: to}, 500, function(){
+      anchorFlag = true;
+    });
+    $('.menu__link').removeClass('menu__link--active');
+    $(this).addClass('menu__link--active');
+    window.history.replaceState({}, '', '#' + anchor);
+  });
+
+
+  
+
+})();
+
+$(window).on('load' , function() {
+    var winHash = window.location.hash,
+        menuHeight = $('#menu').height();
+    if(winHash !== '') {
+      var to = $(winHash).offset().top - menuHeight;
+      $("html, body").animate({scrollTop: to}, 500);
+    }
+});
