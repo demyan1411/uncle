@@ -1,0 +1,124 @@
+#map-canvas {
+  height: 600px; }
+
+.map__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  box-sizing: border-box;
+  position: relative; }
+  .map__wrapper:before, .map__wrapper:after {
+    content: " ";
+    display: table; }
+  .map__wrapper:after {
+    clear: both; }
+
+.map__block {
+  position: absolute;
+  z-index: 10;
+  padding: 50px 38px 14px;
+  background-color: #485c98;
+  top: 0;
+  left: 35px;
+  width: 450px;
+  height: 600px;
+  box-sizing: border-box; }
+
+.map__title {
+  font-family: "m_brodyregular";
+  color: #485c98;
+  font-size: 80px;
+  line-height: 83px;
+  display: block;
+  color: #fff;
+  margin-bottom: 50px; }
+
+.map__h3 {
+  color: #b3b9d0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px; }
+  .map__h3--ib {
+    display: inline-block;
+    vertical-align: middle; }
+
+.map__list {
+  min-width: 150px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top; }
+  .map__list--sircle {
+    list-style-type: disc;
+    color: #a4aecc; }
+
+.map__item {
+  margin-bottom: 15px; }
+  .map__item--white {
+    color: #fff; }
+
+.socials {
+  display: inline-block;
+  vertical-align: middle; }
+  .socials__link {
+    display: inline-block;
+    margin: 0 8px; }
+  .socials__img {
+    display: block; }
+
+.select {
+  position: relative; }
+  .select__value {
+    font-size: 18px;
+    width: 310px;
+    color: #fff;
+    outline: none;
+    background-color: #485c98;
+    height: 52px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #99a6c6;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .select__value:after {
+      content: '';
+      border: 10px solid transparent;
+      border-top: 10px solid #fff;
+      position: absolute;
+      right: 15px;
+      top: 20px; }
+    .select__value:before {
+      content: '';
+      width: 2px;
+      height: 32px;
+      background-color: #a4aecc;
+      position: absolute;
+      right: 47px;
+      top: 50%;
+      margin-top: -16px; }
+  .select__choise {
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    background-color: #485c98; }
+  .select__option {
+    width: 310px;
+    height: 52px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #99a6c6;
+    border-top: none; }
+    .select__option:first-child {
+      border-top: 2px solid #99a6c6; }

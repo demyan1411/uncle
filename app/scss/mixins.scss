@@ -3,8 +3,9 @@ $minWrapperWidth : 960px;
 $footerHeight : 595px;
 $bodyFont : 'Verdana';
 $bodyFontSize : 16px;
-$bodyColor : #fff;
+$bodyColor : #2c2c2c;
 $bodyLineHeight : 20px;
+$titleFont : 'm_brodyregular';
 
 $fontBold : 'elektra_light_probold';
 
@@ -19,6 +20,20 @@ $fontBold : 'elektra_light_probold';
 @function p($target, $context: $wrapperWidth) {
 	@if $target == 0 {@return 0}
 	@return $target / $context + 0em;
+}
+
+@mixin h2 {
+	font-family: $titleFont;
+	color: #485c98;
+	font-size: 80px;
+	line-height: 83px;
+	display: block;
+}
+@mixin h2bold {
+	font-weight: bold;
+	//color: #485c98;
+	text-transform: uppercase;
+
 }
 
 @mixin inlineBlock {

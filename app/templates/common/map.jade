@@ -1,0 +1,38 @@
+section.map#map
+	.map__wrapper
+		.map__block
+			.map__title Где купить?
+			.map__h3 Выберите регион
+			.select
+				button.select__value Новосибирская область
+				.select__choise
+					.select__option(data-option="marker1" data-coor="64.110089, 125.267169") Новосибирская область
+					.select__option(data-option="marker2" data-coor="65.226712, 102.645278") 1
+					.select__option(data-option="marker3" data-coor="59.162085, 104.571867") 2
+					.select__option(data-option="marker4" data-coor="68.172794, 112.464670") 4
+			.map__h3 Магазины в которых есть продукты «Дядя Лёня»
+			ul.map__list
+				li.map__item Перекресток
+				li.map__item ATAK
+				li.map__item Азбука Вкуса
+				li.map__item Магнолия
+				li.map__item Авоська
+			ul.map__list.map__list--sircle
+				li.map__item
+					span.map__item--white Балтийский хлеб
+				li.map__item
+					span.map__item--white Седьмой континент
+				li.map__item
+					span.map__item--white Мой магазин
+				li.map__item
+					span.map__item--white Виктория
+				li.map__item
+					span.map__item--white Магнит
+			.map__h3.map__h3--ib Присоединяйтесь к нам
+			.socials
+				a(href="").socials__link
+					img(src="img/facebook.png").socials__img
+				a(href="").socials__link
+					img(src="img/vk.png").socials__img
+	#map-canvas
+

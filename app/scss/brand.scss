@@ -1,0 +1,60 @@
+@import "mixins";
+.brand {
+	background-color: #fbf4d4;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+	}
+	&__column {
+		display: inline-block;
+		vertical-align: top;
+		&--left {
+			max-width: 350px;
+			margin-right: 50px;
+		}
+		&--right {
+			max-width: 540px;
+			height: auto;
+		}
+	}
+	&__title {
+
+		&--big {
+			@include h2;
+			margin-bottom: 6px;
+		}
+		&--small {
+			@include h2bold;
+			font-size: 12px;
+			line-height: 15px;
+			margin-bottom: 35px;
+			max-width: 305px;
+			display: inline-block;
+		}
+	}
+	&__logo {
+		display: inline-block;
+	}
+	&__text {
+		font-size: 14px;
+		margin-bottom: 10px;
+		max-width: 295px;
+		display: inline-block;
+		&--italic {
+			font-size: 12px;
+			font-style: italic;
+		}
+	}
+	&__field {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	&__imgRight {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}

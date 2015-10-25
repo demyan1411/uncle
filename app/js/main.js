@@ -1,25 +1,42 @@
-
- $(document).ready(function() {
+$(document).ready(function() {
 
  	"use strict";
 
 
 //Запуск модулей
 
+	$('.recipes__slider').slick({
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  dots: true,
+	  infinite: true,
+	  prevArrow: '<button type="button" class="slick-prev">Назад</button>',
+	  nextArrow: '<button type="button" class="slick-next">Вперёд</button>',
+	  responsive: [
+        {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+         {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
+	  //autoplay: true,
+	  //autoplaySpeed: 2000,
+	});
 
-$('.button-up').on('click', function() {
-  $('html, body').animate({scrollTop: 0}, 300);
-});
-
-if($('#map').length) {
-  map.init();
-}
-
-
-
-  if($('form').length) {
-    Popups.init();
-    validateThisForm.init();
+  if($('.select').length) {
+    select.init;
   }
+
+
+
 
 });

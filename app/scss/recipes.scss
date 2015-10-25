@@ -1,0 +1,90 @@
+@import "mixins";
+
+.recipes {
+	background: url(img/recipes__bg.jpg) center top no-repeat;
+	padding-top: 45px;
+	padding-bottom: 145px;
+	//background-size: cover;
+	text-align: center;
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+	}
+	&__title {
+		@include h2;
+		margin-bottom: 50px;
+		color: #fff;
+	}
+	&__slider {
+		margin: 0 -40px;
+	    overflow: hidden;
+	    width: auto;
+	    padding-top: 65px;
+	    margin-top: -65px;
+	}
+	&__slide {
+		//width: 220px !important;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		margin: 0 40px;
+		outline: none;
+		&Name {
+			@include h2bold;
+			color: #fff;
+			font-size: 11px;
+			line-height: 14px;
+			margin-bottom: 10px;
+			&--big {
+				font-weight: bold;
+				font-size: 20px;
+				color: #fff;
+				line-height: 23px;
+				max-width: 155px;
+				height: 75px;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+}
+.recipes .infoBlock__span {
+	margin-bottom: 20px;
+}
+.slick-arrow {
+	font-size: 18px;
+	height: 52px;
+	color: #fff;
+	border: none;
+	outline: none;
+	background: none;
+	position: absolute;
+	top: 35px;
+}
+.slick-next {
+	right: 0;
+	padding-right: 83px;
+	background: url(img/next.png) right 0 no-repeat;
+}
+.slick-prev {
+	left: 0;
+	padding-left: 83px;
+	background: url(img/prev.png) left 0 no-repeat;
+}
+.slick-dots li {
+	display: inline-block;
+	vertical-align: top;
+}
+.slick-dots button {
+	font-size: 0;
+	outline: none;
+	border: none;
+	background-color: #d5b6a3;
+	width: 10px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 0 7px;
+}
+.slick-active button {
+	background-color: #fff;
+}

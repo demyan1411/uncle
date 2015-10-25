@@ -1,0 +1,45 @@
+@import "mixins";
+
+.presents {
+	text-align: center;
+	margin-top: -60px;
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+	}
+	&__title {
+		@include h2;
+		margin-bottom: 40px;
+		color: #f58229;
+		&--blue {
+			color: #485c98;
+		}
+	}
+	&__left {
+		max-width: 538px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__right {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 350px;
+		text-align: left;
+	}
+	&__text {
+		font-size: 24px;
+		line-height: 36px;
+		color: #4d413a;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	&__bold {
+		font-weight: bold;
+	}
+}

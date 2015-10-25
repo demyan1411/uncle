@@ -1,1 +1,132 @@
 @import "mixins";
+
+#map-canvas {
+	height: 600px;
+}
+.map {
+	&__wrapper {
+		@include cl;
+		@include wrapper;
+		position: relative;
+	}
+	&__block {
+		position: absolute;
+		z-index: 10;
+		padding: 50px 38px 14px;
+		background-color: #485c98;
+		top: 0;
+		left: 35px;
+		width: 450px;
+		height: 600px;
+		box-sizing: border-box;
+	}
+	&__title {
+		@include h2;
+		color: #fff;
+		margin-bottom: 50px;
+	}
+	&__h3 {
+		color: #b3b9d0;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 17px;
+		&--ib {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	&__list {
+		min-width: 150px;
+		margin-bottom: 40px;
+		margin-top: 10px;
+		padding-left: 20px;
+		font-size: 16px;
+		line-height: 19px;
+		color: #fff;
+		display: inline-block;
+		vertical-align: top;
+		&--sircle{
+			list-style-type: disc;
+			color: #a4aecc;
+		}
+	}
+	&__item {
+		margin-bottom: 15px;
+		&--white {
+			color: #fff;
+		}
+	}
+}
+.socials {
+	display: inline-block;
+	vertical-align: middle;
+	&__link {
+		display: inline-block;
+		margin: 0 8px;
+	}
+	&__img {
+		display: block;
+	}
+}
+
+.select {
+	position: relative;
+	&__value {
+		font-size: 18px;
+		width: 310px;
+		color: #fff;
+		outline: none;
+		background-color: #485c98;
+		height: 52px;
+		padding: 15px;
+		box-sizing: border-box;
+		border: 2px solid #99a6c6;
+		border-radius: 5px;
+		position: relative;
+		text-align: left;
+		cursor: pointer;
+		margin-bottom: 30px;
+		&:after {
+			content: '';
+			border: 10px solid transparent;
+			border-top: 10px solid #fff;
+			position: absolute;
+			right: 15px;
+			top: 20px;
+		}
+		&:before {
+			content: '';
+			width: 2px;
+			height: 32px;
+			background-color: #a4aecc;
+			position: absolute;
+			right: 47px;
+			top: 50%;
+			margin-top: -16px;
+		}
+	}
+	&__choise {
+		display: none;
+		position: absolute;
+		top: 54px;
+		left: 0;
+		font-size: 18px;
+
+		color: #fff;
+		outline: none;
+		background-color: #485c98;
+
+	}
+	&__option {
+		width: 310px;
+		height: 52px;
+		padding: 15px;
+		box-sizing: border-box;
+		border: 2px solid #99a6c6;
+		border-top: none;
+		&:first-child {
+			border-top: 2px solid #99a6c6;;
+		}
+	}
+}

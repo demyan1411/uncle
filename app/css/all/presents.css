@@ -1,0 +1,46 @@
+.presents {
+  text-align: center;
+  margin-top: -60px; }
+  .presents__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    box-sizing: border-box; }
+    .presents__wrapper:before, .presents__wrapper:after {
+      content: " ";
+      display: table; }
+    .presents__wrapper:after {
+      clear: both; }
+  .presents__title {
+    font-family: "m_brodyregular";
+    color: #485c98;
+    font-size: 80px;
+    line-height: 83px;
+    display: block;
+    margin-bottom: 40px;
+    color: #f58229; }
+    .presents__title--blue {
+      color: #485c98; }
+  .presents__left {
+    max-width: 538px;
+    display: inline-block;
+    vertical-align: top; }
+  .presents__img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .presents__right {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 350px;
+    text-align: left; }
+  .presents__text {
+    font-size: 24px;
+    line-height: 36px;
+    color: #4d413a;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  .presents__bold {
+    font-weight: bold; }
