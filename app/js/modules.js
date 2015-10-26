@@ -190,7 +190,7 @@ var select = (function() {
     });
     $('.menu__link').removeClass('menu__link--active');
     $(this).addClass('menu__link--active');
-    window.history.replaceState({}, '', '#' + anchor);
+    //window.history.replaceState({}, '', '#' + anchor);
   });
 
 
@@ -200,7 +200,15 @@ var select = (function() {
 (function() {
   var $btn = $('.js-popup');
   $btn.on('click', function() {
+    var popupLink = $(this).data('popuplink'),
+        $popupChange = $('.popup__change');
+
+    $popupChange.css({'display': 'none'});
+    console.log(popupLink);
+    $(popupLink).css({'display': 'block'});
+
     $('.popup').addClass('popup__active');
+
 
     // $('html').css({
     //   'overflow': 'hidden'
@@ -231,11 +239,64 @@ var select = (function() {
 
 })();
 
+(function() {
+  $('.js-product__link').on('click', function(e) {
+    e.preventDefault();
+    if( $(window).width() < 800 ) {
+      $('.js-product__link').hide();
+      $('.products__prev').show();
+    }
+
+    var $productId = $(this).attr('href');
+    $('.products__own').removeClass('products__own--active');
+    $($productId).addClass('products__own--active');
+    window.history.replaceState({}, '', $productId);
+
+    productsOwn();
+  });
+
+
+  $('.products__prev').on('click', function() {
+    $('.js-product__link').show();
+    $('.products__own').removeClass('products__own--active');
+    $('.products__prev').hide();
+    window.history.replaceState({}, '', '/');
+  });
+})();
+
 $(window).on('load' , function() {
+
+  ;(function() {
     var winHash = window.location.hash,
         menuHeight = $('#menu').height();
     if(winHash !== '') {
-      var to = $(winHash).offset().top - menuHeight;
-      $("html, body").animate({scrollTop: to}, 500);
+      $('.products__own').each(function() {
+        var products__ownId = $(this).attr('id');
+        //console.log(products__ownId);
+        if(winHash === '#' + products__ownId) {
+
+          if( $(window).width() < 800 ) {
+            $('.js-product__link').hide();
+            $('.products__prev').show();
+          }
+          var to = $('#products').offset().top - menuHeight;
+          // console.log(winHash);
+          // console.log(products__ownId);
+          $(winHash).addClass('products__own--active');
+          $("html, body").animate({scrollTop: to}, 500);
+        }
+      });
     }
+  })();
+
+  productsOwn();
 });
+
+function productsOwn() {
+  $('.products__own').each(function() {
+    if($(this).hasClass('products__own--active')) {
+      //console.log('qwe');
+      $('.js-product__link').addClass('product__link--mini');
+    }
+  });
+}

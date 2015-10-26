@@ -8,12 +8,25 @@
     margin: 0 auto;
     width: 80%;
     position: relative;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
     .products__wrapper:before, .products__wrapper:after {
       content: " ";
       display: table; }
     .products__wrapper:after {
       clear: both; }
+  .products__prev {
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    font-size: 18px;
+    color: #ed7f40;
+    background: url(img/prod-prev.png) 0 0 no-repeat;
+    padding-top: 60px;
+    width: 72px;
+    cursor: pointer;
+    z-index: 2; }
   .products__title {
     font-family: "m_brodyregular";
     color: #485c98;
@@ -25,13 +38,17 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: relative; }
     .products__block-name {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 30px; }
   .products__own {
+    display: none;
     position: relative; }
+    .products__own--active {
+      display: block; }
   .products__img--big {
     display: inline-block;
     vertical-align: top;
@@ -57,7 +74,8 @@
     padding-right: 25px;
     box-sizing: border-box;
     background: #485c98 url(img/potato.jpg) right 89% no-repeat;
-    height: 407px; }
+    height: 407px;
+    position: relative; }
   .productsInfo__right {
     display: inline-block;
     vertical-align: top;
@@ -97,8 +115,11 @@
     margin-bottom: 50px;
     line-height: 18px; }
   .productsInfo__img {
-    margin-right: 20px;
-    margin-bottom: 24px; }
+    position: absolute;
+    bottom: 24px;
+    left: 35px; }
+    .productsInfo__img--right {
+      left: 90px; }
 
 .infoBlock {
   background-color: #fff;
@@ -141,3 +162,19 @@
   color: #fff;
   cursor: pointer;
   display: inline-block; }
+
+.product__link--mini {
+  margin-bottom: 55px;
+  margin-top: 20px; }
+
+.product__link--mini .products__block-name {
+  position: absolute;
+  bottom: -50px;
+  color: #485c98;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  text-transform: none; }
+
+.product__link--mini .products__img {
+  max-height: 200px; }

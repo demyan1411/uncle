@@ -8,7 +8,8 @@
     margin: 0 auto;
     width: 80%;
     position: relative;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 100%; }
     .brand__wrapper:before, .brand__wrapper:after {
       content: " ";
       display: table; }

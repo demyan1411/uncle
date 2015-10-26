@@ -10,7 +10,8 @@
     position: relative;
     box-sizing: border-box;
     margin: 0 -20px;
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
     .advantages__wrapper:before, .advantages__wrapper:after {
       content: " ";
       display: table; }

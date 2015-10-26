@@ -14,7 +14,7 @@ $(document).ready(function() {
 	  nextArrow: '<button type="button" class="slick-next">Вперёд</button>',
 	  responsive: [
         {
-          breakpoint: 960,
+          breakpoint: 1190,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1

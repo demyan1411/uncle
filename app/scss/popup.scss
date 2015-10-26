@@ -14,6 +14,9 @@
 	outline: none;
 	border: none;
 	transition: all .5s;
+	&__change {
+		display: none;
+	}
 	&__active {
 		visibility: visible;
 		opacity: 1;
@@ -79,16 +82,16 @@
     	float: right;
 	}
 	&__img {
-		width: 85%;
+		width: 100%;
 		display: block;
 		height: auto;
-		margin-bottom: 15px;
+		margin-bottom: 35px;
 	}
 	&__h2 {
 		font-size: 18px;
 		color: #4d413a;
 		line-height: 21px;
-		margin-bottom: 12px;
+		margin-bottom: 25px;
 	}
 	&__item {
 		font-size: 12px;
@@ -111,10 +114,10 @@
 		font-size: 12px;
 		line-height: 14px;
 		color: #4d413a;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 	}
 	&__main {
-		padding-bottom: 0;
+		padding-bottom: 20px;
 	}
 	&__footer {
 
@@ -123,7 +126,7 @@
 		width: 100%;
 		vertical-align: middle;
 		position: relative;
-		margin-bottom: 10px;
+		margin-bottom: 40px;
 		text-align: left;
 		&:after {
 			content: '';
@@ -165,7 +168,7 @@
 		line-height: 14px;
 		text-transform: uppercase;
 		font-weight: bold;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 	}
 	&__recipeName {
 		font-weight: bold;
@@ -180,9 +183,9 @@
 	margin-bottom: 0;
 }
 .popup .infoBlock__mainImg {
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 .popup .btn {
-	margin-top: 5px;
+	margin-top: 25px;
 	padding: 7px 10px;
 }
