@@ -144,14 +144,14 @@ var select = (function() {
     var anchorTop = $('#' + anchor).offset().top;
     $('#' + anchor).addClass('section__active');
   });
-  
+
 
   $(window).scroll(function(){
 
     var winST = $(window).scrollTop(),
         winHeight = $(window).height(),
         winBotST = winST + winHeight;
-        
+
     if(winST >= advTop) {
       $('#menu').addClass('menu__active');
     } else {
@@ -163,18 +163,18 @@ var select = (function() {
           thisHeight = $(this).outerHeight();
 
       if( winBotST > thisTop + (thisHeight/2) && winST + menuHeight < thisTop + (thisHeight/2) ) {
-        
+
         var thisId = $(this).attr('id');
         if(anchorFlag === true) {
           $('[data-anchor]').removeClass('menu__link--active');
           $('[data-anchor="' + thisId + '"]').addClass('menu__link--active');
 
-          if(window.location.hash != ('#' + thisId) ) {
-            window.history.replaceState({}, '', '#' + thisId);
-          }
+          // if(window.location.hash != ('#' + thisId) ) {
+          //   window.history.replaceState({}, '', '#' + thisId);
+          // }
         }
 
-        
+
       }
     });
 
@@ -194,7 +194,40 @@ var select = (function() {
   });
 
 
-  
+
+
+})();
+(function() {
+  var $btn = $('.js-popup');
+  $btn.on('click', function() {
+    $('.popup').addClass('popup__active');
+
+    // $('html').css({
+    //   'overflow': 'hidden'
+    // });
+
+  });
+
+  $('.popup').mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".popup__block"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+             $('.popup').removeClass('popup__active');
+
+             // $('html').css({
+             //  'overflow': 'visible'
+             // });
+        }
+    });
+  $('.popup__close').on('click',function() {
+    $('.popup').removeClass('popup__active');
+
+    // $('html').css({
+    //   'overflow': 'visible'
+    //  });
+  });
+
+
 
 })();
 

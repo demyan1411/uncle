@@ -6,12 +6,21 @@
   z-index: 101;
   top: 0;
   left: 0;
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  outline: none;
+  border: none;
+  transition: all .5s; }
+  .popup__active {
+    visibility: visible;
+    opacity: 1; }
   .popup__block {
     max-width: 780px;
     width: 100%;
     background-color: #fff;
-    padding: 35px 75px;
+    padding: 25px 75px;
+    padding-bottom: 15px;
     display: inline-block;
     position: relative;
     text-align: left;
@@ -62,6 +71,93 @@
     line-height: 17px;
     float: right; }
   .popup__img {
-    width: 100%;
+    width: 85%;
     display: block;
-    height: auto; }
+    height: auto;
+    margin-bottom: 15px; }
+  .popup__h2 {
+    font-size: 18px;
+    color: #4d413a;
+    line-height: 21px;
+    margin-bottom: 12px; }
+  .popup__item {
+    font-size: 12px;
+    line-height: 14px;
+    color: #4d413a;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 18px; }
+    .popup__item:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -18px;
+      width: 11px;
+      height: 1px;
+      background-color: #4d413a; }
+  .popup__p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #4d413a;
+    margin-bottom: 8px; }
+  .popup__main {
+    padding-bottom: 0; }
+  .popup__line {
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: left; }
+    .popup__line:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #959595;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  .popup__lineText {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #4d413a;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 10px; }
+  .popup__footer {
+    text-align: center;
+    font-size: 0;
+    margin: 0 -35px; }
+  .popup__recipe {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 180px;
+    text-align: left;
+    margin: 0 25px; }
+  .popup__recipeTitle {
+    color: #959595;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .popup__recipeName {
+    font-weight: bold;
+    color: #232323;
+    font-size: 14px;
+    line-height: 18px;
+    height: 45px; }
+
+.popup .infoBlock {
+  padding: 0;
+  margin-bottom: 0; }
+
+.popup .infoBlock__mainImg {
+  margin-bottom: 5px; }
+
+.popup .btn {
+  margin-top: 5px;
+  padding: 7px 10px; }
