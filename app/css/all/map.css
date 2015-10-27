@@ -122,3 +122,6 @@
     border-top: none; }
     .select__option:first-child {
       border-top: 2px solid #99a6c6; }
+
+.map__change {
+  display: none; }

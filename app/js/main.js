@@ -26,6 +26,14 @@ $(document).ready(function() {
             slidesToShow: 2,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false
+          }
         }
       ]
 	  //autoplay: true,

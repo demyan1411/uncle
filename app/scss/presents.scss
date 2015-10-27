@@ -7,6 +7,7 @@
 	&__wrapper {
 		@include wrapper;
 		@include cl;
+		max-width: 900px;
 	}
 	&__title {
 		@include h2;
@@ -20,6 +21,9 @@
 		max-width: 538px;
 		display: inline-block;
 		vertical-align: top;
+		float: left;
+		position: relative;
+		z-index: 1;
 	}
 	&__img {
 		display: block;
@@ -31,6 +35,13 @@
 		vertical-align: top;
 		max-width: 350px;
 		text-align: left;
+		margin-left: 10px;
+		float: right;
+		position: relative;
+		z-index: 2;
+		.btn {
+			margin-left: -40px;
+		}
 	}
 	&__text {
 		font-size: 24px;
@@ -39,6 +50,7 @@
 		text-transform: uppercase;
 		margin-bottom: 40px;
 		margin-top: 40px;
+		margin-left: -40px;
 	}
 	&__bold {
 		font-weight: bold;

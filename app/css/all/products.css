@@ -37,9 +37,13 @@
   .products__block {
     display: inline-block;
     vertical-align: top;
-    margin: 0 30px;
-    margin-bottom: 40px;
-    position: relative; }
+    margin: 0 25px;
+    margin-bottom: 35px;
+    position: relative;
+    border: 1px solid transparent;
+    padding: 5px; }
+    .products__block:hover {
+      border: 1px solid #475d97; }
     .products__block-name {
       font-weight: bold;
       text-transform: uppercase;
@@ -162,6 +166,10 @@
   color: #fff;
   cursor: pointer;
   display: inline-block; }
+  .btn:hover {
+    background-color: #fea25c; }
+  .btn:active {
+    background-color: #d66d1d; }
 
 .product__link--mini {
   margin-bottom: 55px;
@@ -178,3 +186,17 @@
 
 .product__link--mini .products__img {
   max-height: 200px; }
+
+.recept {
+  text-align: left;
+  display: none;
+  width: 205px; }
+
+.recept__h2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d413a;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .recept__h2:first-child {
+    margin-top: 0; }

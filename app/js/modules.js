@@ -17,6 +17,7 @@ var select = (function() {
 
 		},
 		_setUpListeners = function() {
+      $('[data-shops="marker1"]').show();
 			_showSelect();
 			_closeSelect();
 			_insertValue();
@@ -45,6 +46,9 @@ var select = (function() {
 				var val = $(this).text();
 				$(this).closest('.select__choise').siblings('.select__value').text(val);
 				//.addClass('form__selectValue_active');
+        var thisMarker = $(this).data('option');
+        $('.map__change').hide();
+        $('[data-shops="' + thisMarker + '"]').show();
 			});
 		}
 
@@ -54,7 +58,8 @@ var select = (function() {
 
 }());
 
-;(function() {
+
+function initMap() {
   var myLatlng = new google.maps.LatLng(64.628808, 92.822123);
 
   var myOptions = {
@@ -109,10 +114,12 @@ var select = (function() {
 
       var selectText = $('[data-option="' + this.option + '"]').text();
       $('.select__value').text(selectText);
+      $('[data-shops]').hide();
+      $('[data-shops="' + this.option + '"]').show();
       //console.log(selectText);
 
     });
-  }
+}
 
   markers['marker1'].setIcon(markerImageHover);
 
@@ -131,8 +138,9 @@ var select = (function() {
   	markers[thisOption].setIcon(markerImageHover);
 
   });
+}
 
-})();
+
 
 (function(){
    var advTop = $('#advantages').offset().top,
@@ -198,22 +206,37 @@ var select = (function() {
 
 })();
 (function() {
+
   var $btn = $('.js-popup');
   $btn.on('click', function() {
-    var popupLink = $(this).data('popuplink'),
-        $popupChange = $('.popup__change');
+    if($(window).width() > 600) {
+      var popupLink = $(this).data('popuplink'),
+          $popupChange = $('.popup__change');
 
-    $popupChange.css({'display': 'none'});
-    console.log(popupLink);
-    $(popupLink).css({'display': 'block'});
+      $popupChange.css({'display': 'none'});
+      console.log(popupLink);
+      $(popupLink).css({'display': 'block'});
 
-    $('.popup').addClass('popup__active');
+      $('.popup').addClass('popup__active');
+    } else {
+      $(this).siblings('.recept').slideToggle(500);
+      var text = $(this).text();
+      $(this).text(text == "Подробнее" ? "Скрыть" : "Подробнее");
 
+    }
 
-    // $('html').css({
-    //   'overflow': 'hidden'
-    // });
+  });
 
+  $('#recipes').on('click', '.slick-arrow', function() {
+    console.log('asd');
+    if($(window).width() < 600) {
+      console.log('qwe');
+      $('#recipes .recept').each(function() {
+        $(this).slideUp(500);
+        $('#recipes .btn').text("Подробнее");
+      });
+
+    }
   });
 
   $('.popup').mouseup(function (e){ // событие клика по веб-документу
