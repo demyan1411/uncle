@@ -18,6 +18,8 @@
 
 @media screen and (max-width: 1000px) {
   .advantages__img5 {
+    display: none; }
+  #scene {
     display: none; } }
 
 @media screen and (max-width: 965px) {
@@ -121,6 +123,12 @@
   .presents__right .btn, .presents__text {
     margin-left: 0 !important; } }
 
+@media screen and (max-width: 650px) {
+  .map__list {
+    min-width: 122px;
+    font-size: 12px;
+    line-height: 17px; } }
+
 @media screen and (max-width: 630px) {
   .products__prev {
     display: none !important; }
@@ -196,11 +204,11 @@
   .slick-prev {
     left: -20px !important; }
   .select__value {
-    width: 285px; }
-  .map__list {
-    min-width: 122px;
-    font-size: 12px;
-    line-height: 17px; } }
+    width: 285px; } }
+
+@media screen and (max-width: 490px) {
+  .products__img--big {
+    max-width: 270px !important; } }
 
 @media screen and (max-width: 450px) {
   .header__rel-block {

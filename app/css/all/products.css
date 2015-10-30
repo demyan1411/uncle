@@ -2,7 +2,8 @@
   background-color: #fff;
   padding-top: 60px;
   padding-bottom: 40px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .products__wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,9 +122,12 @@
   .productsInfo__img {
     position: absolute;
     bottom: 24px;
-    left: 35px; }
+    left: 25px;
+    max-width: 50px; }
     .productsInfo__img--right {
-      left: 90px; }
+      left: 75px; }
+    .productsInfo__img--third {
+      left: 135px; }
 
 .infoBlock {
   background-color: #fff;

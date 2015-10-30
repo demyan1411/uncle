@@ -45,6 +45,20 @@ $(document).ready(function() {
   }
 
 
-
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene, {
+    calibrateX: true,
+    calibrateY: true,
+    invertX: true,
+    invertY: false,
+    limitX: false,
+    limitY: false,
+    scalarX: 60,
+    scalarY: 60,
+    frictionX: 0.04,
+    frictionY: 0.04,
+    originX: 5,
+    originY: 5
+  });
 
 });

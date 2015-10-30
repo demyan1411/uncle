@@ -20,3 +20,65 @@
 		margin: 25px 40px;
 	}
 }
+
+.brand {
+	background-color: #fbf4d4;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	&__wrapper {
+		@include wrapper;
+		@include cl;
+		width: 100%;
+	}
+	&__column {
+		display: inline-block;
+		vertical-align: top;
+		&--left {
+			max-width: 350px;
+			margin-right: 50px;
+		}
+		&--right {
+			max-width: 540px;
+			height: auto;
+		}
+	}
+	&__title {
+
+		&--big {
+			@include h2;
+			margin-bottom: 15px;
+		}
+		&--small {
+			@include h2bold;
+			font-size: 12px;
+			line-height: 18px;
+			margin-bottom: 35px;
+			max-width: 305px;
+			display: inline-block;
+			letter-spacing: 1.5px;
+		}
+	}
+	&__logo {
+		display: inline-block;
+	}
+	&__text {
+		font-size: 14px;
+		margin-bottom: 10px;
+		max-width: 100%;
+		display: inline-block;
+		&--italic {
+			font-size: 12px;
+			font-style: italic;
+		}
+	}
+	&__field {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	&__imgRight {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}

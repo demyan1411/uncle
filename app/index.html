@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Магазинчик</title>
     <meta name="description" content="">
+    <!-- <style></style>-->
     <link rel="stylesheet" href="_fonts.css">
+    <!-- <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>-->
     <noscript>
       <link rel="stylesheet" href="_main.min.css">
     </noscript>
@@ -18,597 +20,704 @@
     <!-- endbower-->
     <link rel="stylesheet" href="header.css">
     <!-- endbuild-->
-    
-    <!-- build:css css/oldIe.min.css--><!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/oldIe.css"><![endif]-->
-    <!-- endbuild-->
-    
   </head>
   <body>
-    <section id="menu" class="menu">
-      <div class="menu__wrapper"><a href="" class="menu__logo"><img src="img/menu__logo.png" class="menu__logoImg"></a>
-        <ul class="menu__list">
-          <li class="menu__item"><a href="" data-anchor="brand" class="menu__link">О бренде</a></li>
-          <li class="menu__item"><a href="" data-anchor="products" class="menu__link">Наши продукты</a></li>
-          <li class="menu__item"><a href="" data-anchor="recipes" class="menu__link">Рецепты</a></li>
-          <li class="menu__item"><a href="" data-anchor="presents" class="menu__link">Акции</a></li>
-          <li class="menu__item"><a href="" data-anchor="map" class="menu__link">Контакты</a></li>
-        </ul>
-      </div>
-    </section>
-    <section id="header" class="header">
-      <div class="header__wrapper"><a href="" class="header__logo"><img src="img/logo.png" alt="logo" class="header__logo-img"></a>
-        <h1 class="header__title">Свежие овощи из Сибири<img src="img/header-title.png" alt="header-title" class="header__title-img"></h1>
-        <div class="header__rel-block"><a href="" class="header__stiker"><img src="img/stiker.png" alt="stiker" class="header__stiker-img"></a></div>
-      </div>
-    </section>
-    <section id="advantages" class="advantages">
-      <div class="advantages__wrapper"><img src="img/advantages__img1.png" alt="" class="advantages__img advantages__img1"><img src="img/advantages__img2.png" alt="" class="advantages__img advantages__img2"><img src="img/advantages__img3.png" alt="" class="advantages__img advantages__img3"><img src="img/advantages__img4.png" alt="" class="advantages__img advantages__img4"><img src="img/advantages__img5.png" alt="" class="advantages__img advantages__img5"></div>
-    </section>
-    <section id="brand" class="brand section">
-      <div class="brand__wrapper">
-        <div class="brand__column brand__column--left">
-          <h2 class="brand__title"><span class="brand__title--big">О бренде</span><span class="brand__title--small">
-              Экологически чистые овощи,
-              выращенные в Сибири</span></h2><img src="img/brand__logo.png" alt="" class="brand__logo">
-          <div class="brand__text">Наш образ — дружелюбный, тёплый, живой, построен на принцепах открытости, позитива и лёгкой самоиронии. Он подтверждает то, что продукция под маркой «Дядя Лёня» полезна и доступна всем, и помогает сделать повседневную жизнь здоровой и качественной.</div><img src="img/brand__field.png" alt="" class="brand__field">
-          <div class="brand__text--italic">«Мы заботимся о том, чтобы люди получали максимум удовлетворения от осознанного выбора свежих, качественных овощей местного производства.»</div>
+    <div class="main">
+      <section id="menu" class="menu">
+        <div class="menu__wrapper"><a href="" class="menu__logo"><img src="img/menu__logo.png" class="menu__logoImg"></a>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="" data-anchor="brand" class="menu__link">О бренде</a></li>
+            <li class="menu__item"><a href="" data-anchor="products" class="menu__link">Наши продукты</a></li>
+            <li class="menu__item"><a href="" data-anchor="recipes" class="menu__link">Рецепты</a></li>
+            <li class="menu__item"><a href="" data-anchor="presents" class="menu__link">Акции</a></li>
+            <li class="menu__item"><a href="" data-anchor="map" class="menu__link">Контакты</a></li>
+          </ul>
         </div>
-        <div class="brand__column brand__column--right"><img src="img/brand__right.jpg" alt="" class="brand__imgRight"></div>
-      </div>
-    </section>
-    <section id="products" class="products">
-      <div class="products__wrapper">
-        <div class="products__prev">Назад</div>
-        <div class="products__title">Наши продукты</div>
-        <div id="choicePotatoes" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">Картофель</div>
-              <div class="productsInfo__title-h2">Отборный</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
+      </section>
+      <section id="header" class="header">
+        <div class="header__wrapper"><a href="" class="header__logo"><img src="img/logo.png" alt="logo" class="header__logo-img"></a>
+          <h1 class="header__title">Свежие овощи из Сибири<img src="img/header-title.png" alt="header-title" class="header__title-img"></h1>
+          <div class="header__rel-block"><a href="" class="header__stiker"><img src="img/stiker.png" alt="stiker" class="header__stiker-img"></a></div>
+        </div>
+      </section>
+      <section id="advantages" class="advantages">
+        <div class="advantages__wrapper"><img src="img/advantages__img1.png" alt="" class="advantages__img advantages__img1"><img src="img/advantages__img2.png" alt="" class="advantages__img advantages__img2"><img src="img/advantages__img3.png" alt="" class="advantages__img advantages__img3"><img src="img/advantages__img4.png" alt="" class="advantages__img advantages__img4"><img src="img/advantages__img5.png" alt="" class="advantages__img advantages__img5"></div>
+      </section>
+      <section id="brand" class="brand section">
+        <div class="brand__wrapper">
+          <div class="brand__column brand__column--left">
+            <h2 class="brand__title"><span class="brand__title--big">О бренде</span><span class="brand__title--small">
+                Экологически чистые овощи,
+                выращенные в Сибири</span></h2><img src="img/brand__logo.png" alt="" class="brand__logo">
+            <div class="brand__text">Наш образ — дружелюбный, тёплый, живой, построен на принцепах открытости, позитива и лёгкой самоиронии. Он подтверждает то, что продукция под маркой «Дядя Лёня» полезна и доступна всем, и помогает сделать повседневную жизнь здоровой и качественной.</div><img src="img/brand__field.png" alt="" class="brand__field">
+            <div class="brand__text--italic">«Мы заботимся о том, чтобы люди получали максимум удовлетворения от осознанного выбора свежих, качественных овощей местного производства.»</div>
+          </div>
+          <div class="brand__column brand__column--right"><img src="img/brand__right.jpg" alt="" class="brand__imgRight"></div>
+        </div>
+      </section>
+      <section id="products" class="products">
+        <div class="products__wrapper">
+          <div class="products__prev">Назад</div>
+          <div class="products__title">Наши продукты</div>
+          <div id="choicePotatoes" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">Картофель</div>
+                <div class="productsInfo__title-h2">Отборный</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img2.png" class="productsInfo__img"><img src="img/advantages__img1.png" class="productsInfo__img productsInfo__img--right"><img src="img/advantages__img3.png" class="productsInfo__img productsInfo__img--third">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">Картофель с&nbsp;розмарином</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
             </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">Картофель с&nbsp;розмарином</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
+          </div>
+          <div id="name2" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem</div>
+                <div class="productsInfo__title-h2">lorem</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский</div><img src="img/advantages__img1.png" class="productsInfo__img"><img src="img/advantages__img4.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name3" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem2</div>
+                <div class="productsInfo__title-h2">lorem2</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img2.png" class="productsInfo__img"><img src="img/advantages__img3.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem2</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name4" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem3</div>
+                <div class="productsInfo__title-h2">lorem3</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img4.png" class="productsInfo__img"><img src="img/advantages__img2.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem3</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name5" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem4</div>
+                <div class="productsInfo__title-h2">lorem4</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img3.png" class="productsInfo__img"><img src="img/advantages__img1.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem4</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name6" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem5</div>
+                <div class="productsInfo__title-h2">lorem5</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img4.png" class="productsInfo__img"><img src="img/advantages__img3.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem5</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name7" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
+            <div class="productsInfo">
+              <div class="productsInfo__left">
+                <div class="productsInfo__title">lorem6</div>
+                <div class="productsInfo__title-h2">lorem6</div>
+                <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/advantages__img1.png" class="productsInfo__img"><img src="img/advantages__img2.png" class="productsInfo__img productsInfo__img--right">
+              </div>
+              <div class="productsInfo__right">
+                <div class="productsInfo__title productsInfo__title--right">рецепт</div>
+                <div data-popuplink="#potato" class="js-openRecept">
+                  <div class="productsInfo__title--grey">lorem6</div>
+                  <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <button class="btn js-popup">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div><a href="#choicePotatoes" class="products__block js-product__link">
+            <div class="products__block-name">Отборный</div><img src="img/products__img1.jpg" alt="" class="products__img"></a><a href="#name2" class="products__block js-product__link">
+            <div class="products__block-name">Экстра</div><img src="img/products__img2.jpg" alt="" class="products__img"></a><a href="#name3" class="products__block js-product__link">
+            <div class="products__block-name">Для жарки</div><img src="img/products__img3.jpg" alt="" class="products__img"></a><a href="#name4" class="products__block js-product__link">
+            <div class="products__block-name">Для варки</div><img src="img/products__img4.jpg" alt="" class="products__img"></a><a href="#name5" class="products__block js-product__link">
+            <div class="products__block-name">Мундирный</div><img src="img/products__img5.jpg" alt="" class="products__img"></a><a href="#name6" class="products__block js-product__link">
+            <div class="products__block-name">Морковь</div><img src="img/products__img6.jpg" alt="" class="products__img"></a><a href="#name7" class="products__block js-product__link">
+            <div class="products__block-name">Свекла</div><img src="img/products__img7.jpg" alt="" class="products__img"></a>
+        </div>
+      </section>
+      <section id="recipes" class="recipes">
+        <div class="recipes__wrapper">
+          <ul id="scene">
+            <li data-depth="-0.20" class="leaves1 layer"></li>
+            <li data-depth="0.20" class="leaves2 layer"></li>
+            <li data-depth="0.20" class="leaves3 layer"></li>
+            <li data-depth="-0.20" class="leaves4 layer"></li>
+          </ul>
+          <div class="recipes__title">Рецепты</div>
+          <div class="recipes__slider">
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#potato" class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#something" class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель запечённый в&nbsp;сметане</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#somethingElse" class="js-openRecept">
+                <div class="recipes__slideName--big">Гуляшь на&nbsp;пиве</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg2.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#potato" class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#something" class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div data-popuplink="#somethingElse" class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__slide">
+              <div class="recipes__slideName">рецепт</div>
+              <div data-popuplink="#potato" class="js-openRecept">
+                <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="recept">
+                    <div class="recept__h2">Ингредиенты</div>
+                    <ul class="popup__list">
+                      <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                      <li class="popup__item">2 десертные ложки масла</li>
+                      <li class="popup__item">4 зубчика чеснока</li>
+                      <li class="popup__item">4 ст ложки резанного розмарина</li>
+                      <li class="popup__item">1 десертная ложка соли</li>
+                      <li class="popup__item">противень 50х30 см</li>
+                      <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                    </ul>
+                    <div class="recept__h2">Рецепт приготовления</div>
+                    <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                    <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                    <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                    <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+                  </div>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div id="name2" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem</div>
-              <div class="productsInfo__title-h2">lorem</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
-            </div>
+      </section>
+      <section id="presents" class="presents">
+        <div class="presents__wrapper">
+          <div class="presents__title">Подарки от<span class="presents__title--blue"> «Дяди Лёни»</span></div>
+          <div class="presents__right">
+            <div class="presents__text">Зарегистрируй код и&nbsp;выиграй<span class="presents__bold"> сертификат на&nbsp;1000 руб.</span></div><a href="" class="btn">Подробнее об акции</a>
           </div>
+          <div class="presents__left"><img src="img/presents__img.jpg" class="presents__img"></div>
         </div>
-        <div id="name3" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem2</div>
-              <div class="productsInfo__title-h2">lorem2</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem2</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
-            </div>
-          </div>
-        </div>
-        <div id="name4" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem3</div>
-              <div class="productsInfo__title-h2">lorem3</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem3</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
-            </div>
-          </div>
-        </div>
-        <div id="name5" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem4</div>
-              <div class="productsInfo__title-h2">lorem4</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem4</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+      </section>
+      <section id="map" class="map">
+        <div class="map__wrapper">
+          <div class="map__block">
+            <div class="map__title">Где купить?</div>
+            <div class="map__h3">Выберите регион</div>
+            <div class="select">
+              <button class="select__value">Новосибирская область</button>
+              <div class="select__choise">
+                <div data-option="marker1" data-coor="64.110089, 125.267169" class="select__option">Новосибирская область</div>
+                <div data-option="marker2" data-coor="65.226712, 102.645278" class="select__option">1</div>
+                <div data-option="marker3" data-coor="59.162085, 104.571867" class="select__option">2</div>
+                <div data-option="marker4" data-coor="68.172794, 112.464670" class="select__option">4</div>
               </div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
             </div>
-          </div>
-        </div>
-        <div id="name6" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem5</div>
-              <div class="productsInfo__title-h2">lorem5</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem5</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
-            </div>
-          </div>
-        </div>
-        <div id="name7" class="products__own"><img src="img/products__img--big.jpg" class="products__img--big">
-          <div class="productsInfo">
-            <div class="productsInfo__left">
-              <div class="productsInfo__title">lorem6</div>
-              <div class="productsInfo__title-h2">lorem6</div>
-              <div class="productsInfo__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div><img src="img/productsInfo__img1.png" class="productsInfo__img"><img src="img/productsInfo__img2.png" class="productsInfo__img productsInfo__img--right">
-            </div>
-            <div class="productsInfo__right">
-              <div class="productsInfo__title productsInfo__title--right">рецепт</div>
-              <div class="productsInfo__title--grey">lorem6</div>
-              <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span></div>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <button data-popuplink="#potato" class="btn js-popup">Подробнее</button>
-            </div>
-          </div>
-        </div><a href="#choicePotatoes" class="products__block js-product__link">
-          <div class="products__block-name">Отборный</div><img src="img/products__img1.jpg" alt="" class="products__img"></a><a href="#name2" class="products__block js-product__link">
-          <div class="products__block-name">Экстра</div><img src="img/products__img2.jpg" alt="" class="products__img"></a><a href="#name3" class="products__block js-product__link">
-          <div class="products__block-name">Для жарки</div><img src="img/products__img3.jpg" alt="" class="products__img"></a><a href="#name4" class="products__block js-product__link">
-          <div class="products__block-name">Для варки</div><img src="img/products__img4.jpg" alt="" class="products__img"></a><a href="#name5" class="products__block js-product__link">
-          <div class="products__block-name">Мундирный</div><img src="img/products__img5.jpg" alt="" class="products__img"></a><a href="#name6" class="products__block js-product__link">
-          <div class="products__block-name">Морковь</div><img src="img/products__img6.jpg" alt="" class="products__img"></a><a href="#name7" class="products__block js-product__link">
-          <div class="products__block-name">Свекла</div><img src="img/products__img7.jpg" alt="" class="products__img"></a>
-      </div>
-    </section>
-    <section id="recipes" class="recipes">
-      <div class="recipes__wrapper">
-        <div class="recipes__title">Рецепты</div>
-        <div class="recipes__slider">
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#potato" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель запечённый в&nbsp;сметане</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#something" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Гуляшь на&nbsp;пиве</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg2.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#somethingElse" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#potato" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#something" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#somethingElse" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="recipes__slide">
-            <div class="recipes__slideName">рецепт</div>
-            <div class="recipes__slideName--big">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div class="recept">
-                <div class="recept__h2">Ингредиенты</div>
-                <ul class="popup__list">
-                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                  <li class="popup__item">2 десертные ложки масла</li>
-                  <li class="popup__item">4 зубчика чеснока</li>
-                  <li class="popup__item">4 ст ложки резанного розмарина</li>
-                  <li class="popup__item">1 десертная ложка соли</li>
-                  <li class="popup__item">противень 50х30 см</li>
-                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
-                </ul>
-                <div class="recept__h2">Рецепт приготовления</div>
-                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-              </div>
-              <div data-popuplink="#potato" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="presents" class="presents">
-      <div class="presents__wrapper">
-        <div class="presents__title">Подарки от<span class="presents__title--blue"> «Дяди Лёни»</span></div>
-        <div class="presents__right">
-          <div class="presents__text">Зарегистрируй код и&nbsp;выиграй<span class="presents__bold"> сертификат на&nbsp;1000 руб.</span></div><a href="" class="btn">Подробнее об акции</a>
-        </div>
-        <div class="presents__left"><img src="img/presents__img.jpg" class="presents__img"></div>
-      </div>
-    </section>
-    <section id="map" class="map">
-      <div class="map__wrapper">
-        <div class="map__block">
-          <div class="map__title">Где купить?</div>
-          <div class="map__h3">Выберите регион</div>
-          <div class="select">
-            <button class="select__value">Новосибирская область</button>
-            <div class="select__choise">
-              <div data-option="marker1" data-coor="64.110089, 125.267169" class="select__option">Новосибирская область</div>
-              <div data-option="marker2" data-coor="65.226712, 102.645278" class="select__option">1</div>
-              <div data-option="marker3" data-coor="59.162085, 104.571867" class="select__option">2</div>
-              <div data-option="marker4" data-coor="68.172794, 112.464670" class="select__option">4</div>
-            </div>
-          </div>
-          <div class="map__h3">Магазины в которых есть продукты «Дядя Лёня»</div>
-          <div data-shops="marker1" class="map__change">
-            <ul class="map__list">
-              <li class="map__item">Перекресток</li>
-              <li class="map__item">ATAK</li>
-              <li class="map__item">Азбука Вкуса</li>
-              <li class="map__item">Магнолия</li>
-              <li class="map__item">Авоська</li>
-            </ul>
-            <ul class="map__list map__list--sircle">
-              <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
-              <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
-              <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
-              <li class="map__item"><span class="map__item--white">Виктория</span></li>
-              <li class="map__item"><span class="map__item--white">Магнит</span></li>
-            </ul>
-          </div>
-          <div data-shops="marker2" class="map__change">
-            <ul class="map__list">
-              <li class="map__item">Перекресток</li>
-              <li class="map__item">ATAK</li>
-              <li class="map__item">Азбука Вкуса</li>
-            </ul>
-            <ul class="map__list map__list--sircle">
-              <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
-              <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
-              <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
-            </ul>
-          </div>
-          <div data-shops="marker3" class="map__change">
-            <ul class="map__list">
-              <li class="map__item">Перекресток</li>
-              <li class="map__item">ATAK</li>
-            </ul>
-            <ul class="map__list map__list--sircle">
-              <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
-              <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
-            </ul>
-          </div>
-          <div data-shops="marker4" class="map__change">
-            <ul class="map__list">
-              <li class="map__item">Перекресток</li>
-              <li class="map__item">ATAK</li>
-              <li class="map__item">Азбука Вкуса</li>
-              <li class="map__item">Магнолия</li>
-            </ul>
-            <ul class="map__list map__list--sircle">
-              <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
-              <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
-              <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
-              <li class="map__item"><span class="map__item--white">Виктория</span></li>
-            </ul>
-          </div>
-          <div class="map__h3 map__h3--ib">Присоединяйтесь к нам</div>
-          <div class="socials"><a href="" class="socials__link"><img src="img/facebook.png" class="socials__img"></a><a href="" class="socials__link"><img src="img/vk.png" class="socials__img"></a></div>
-        </div>
-      </div>
-      <div id="map-canvas"></div>
-    </section>
-    <button class="popup">
-      <div class="popup__block">
-        <div class="popup__close"></div>
-        <div id="potato" class="popup__change">
-          <div class="popup__header">
-            <div class="popup__left">
-              <div class="popup__name">рецепт</div>
-              <div class="popup__title">Картофель с&nbsp;розмарином</div>
-              <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
-            </div>
-            <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
-          </div>
-          <div class="popup__main">
-            <div class="popup__left">
-              <div class="popup__h2">Ингредиенты</div>
-              <ul class="popup__list">
-                <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                <li class="popup__item">2 десертные ложки масла</li>
-                <li class="popup__item">4 зубчика чеснока</li>
-                <li class="popup__item">4 ст ложки резанного розмарина</li>
-                <li class="popup__item">1 десертная ложка соли</li>
-                <li class="popup__item">противень 50х30 см</li>
-                <li class="popup__item">духовку разогреваем до 230 градусов</li>
+            <div class="map__h3">Магазины в которых есть продукты «Дядя Лёня»</div>
+            <div data-shops="marker1" class="map__change">
+              <ul class="map__list">
+                <li class="map__item">Перекресток</li>
+                <li class="map__item">ATAK</li>
+                <li class="map__item">Азбука Вкуса</li>
+                <li class="map__item">Магнолия</li>
+                <li class="map__item">Авоська</li>
+              </ul>
+              <ul class="map__list map__list--sircle">
+                <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
+                <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
+                <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
+                <li class="map__item"><span class="map__item--white">Виктория</span></li>
+                <li class="map__item"><span class="map__item--white">Магнит</span></li>
               </ul>
             </div>
-            <div class="popup__right">
-              <div class="popup__h2">Рецепт приготовления</div>
-              <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-              <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-              <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-              <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
-            </div>
-          </div>
-        </div>
-        <div id="something" class="popup__change">
-          <div class="popup__header">
-            <div class="popup__left">
-              <div class="popup__name">рецепт</div>
-              <div class="popup__title">something</div>
-              <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
-            </div>
-            <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
-          </div>
-          <div class="popup__main">
-            <div class="popup__left">
-              <div class="popup__h2">Ингредиенты</div>
-              <ul class="popup__list">
-                <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
-                <li class="popup__item">2 десертные ложки масла</li>
-                <li class="popup__item">4 зубчика чеснока</li>
+            <div data-shops="marker2" class="map__change">
+              <ul class="map__list">
+                <li class="map__item">Перекресток</li>
+                <li class="map__item">ATAK</li>
+                <li class="map__item">Азбука Вкуса</li>
+              </ul>
+              <ul class="map__list map__list--sircle">
+                <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
+                <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
+                <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
               </ul>
             </div>
-            <div class="popup__right">
-              <div class="popup__h2">Рецепт приготовления</div>
-              <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
-              <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
-            </div>
-          </div>
-        </div>
-        <div id="somethingElse" class="popup__change">
-          <div class="popup__header">
-            <div class="popup__left">
-              <div class="popup__name">рецепт</div>
-              <div class="popup__title">somethingElse</div>
-              <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
-            </div>
-            <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
-          </div>
-          <div class="popup__main">
-            <div class="popup__left">
-              <div class="popup__h2">Ингредиенты</div>
-              <ul class="popup__list">
-                <li class="popup__item">4 ст ложки резанного розмарина</li>
-                <li class="popup__item">1 десертная ложка соли</li>
-                <li class="popup__item">противень 50х30 см</li>
-                <li class="popup__item">духовку разогреваем до 230 градусов</li>
+            <div data-shops="marker3" class="map__change">
+              <ul class="map__list">
+                <li class="map__item">Перекресток</li>
+                <li class="map__item">ATAK</li>
+              </ul>
+              <ul class="map__list map__list--sircle">
+                <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
+                <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
               </ul>
             </div>
-            <div class="popup__right">
-              <div class="popup__h2">Рецепт приготовления</div>
-              <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
-              <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+            <div data-shops="marker4" class="map__change">
+              <ul class="map__list">
+                <li class="map__item">Перекресток</li>
+                <li class="map__item">ATAK</li>
+                <li class="map__item">Азбука Вкуса</li>
+                <li class="map__item">Магнолия</li>
+              </ul>
+              <ul class="map__list map__list--sircle">
+                <li class="map__item"><span class="map__item--white">Балтийский хлеб</span></li>
+                <li class="map__item"><span class="map__item--white">Седьмой континент</span></li>
+                <li class="map__item"><span class="map__item--white">Мой магазин</span></li>
+                <li class="map__item"><span class="map__item--white">Виктория</span></li>
+              </ul>
+            </div>
+            <div class="map__h3 map__h3--ib">Присоединяйтесь к нам</div>
+            <div class="socials"><a href="" class="socials__link"><img src="img/facebook.png" class="socials__img"></a><a href="" class="socials__link"><img src="img/vk.png" class="socials__img"></a></div>
+          </div>
+        </div>
+        <div id="map-canvas"></div>
+      </section>
+      <button class="popup">
+        <div class="popup__block">
+          <div class="popup__close"></div>
+          <div id="potato" class="popup__change">
+            <div class="popup__header">
+              <div class="popup__left">
+                <div class="popup__name">рецепт</div>
+                <div class="popup__title">Картофель с&nbsp;розмарином</div>
+                <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
+              </div>
+              <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__left">
+                <div class="popup__h2">Ингредиенты</div>
+                <ul class="popup__list">
+                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                  <li class="popup__item">2 десертные ложки масла</li>
+                  <li class="popup__item">4 зубчика чеснока</li>
+                  <li class="popup__item">4 ст ложки резанного розмарина</li>
+                  <li class="popup__item">1 десертная ложка соли</li>
+                  <li class="popup__item">противень 50х30 см</li>
+                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                </ul>
+              </div>
+              <div class="popup__right">
+                <div class="popup__h2">Рецепт приготовления</div>
+                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+              </div>
+            </div>
+          </div>
+          <div id="something" class="popup__change">
+            <div class="popup__header">
+              <div class="popup__left">
+                <div class="popup__name">рецепт</div>
+                <div class="popup__title">something</div>
+                <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
+              </div>
+              <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__left">
+                <div class="popup__h2">Ингредиенты</div>
+                <ul class="popup__list">
+                  <li class="popup__item">1,8 кг картофеля «Дядя Лёня», мытого отборного</li>
+                  <li class="popup__item">2 десертные ложки масла</li>
+                  <li class="popup__item">4 зубчика чеснока</li>
+                </ul>
+              </div>
+              <div class="popup__right">
+                <div class="popup__h2">Рецепт приготовления</div>
+                <p class="popup__p">Каждую картофелину разрежем на 4 части и обсушим с помощью полотенца</p>
+                <p class="popup__p">В миске смешаем растительное масло, резанный розмарин, давленный чеснок и соль</p>
+              </div>
+            </div>
+          </div>
+          <div id="somethingElse" class="popup__change">
+            <div class="popup__header">
+              <div class="popup__left">
+                <div class="popup__name">рецепт</div>
+                <div class="popup__title">somethingElse</div>
+                <div class="popup__cl"><span class="popup__time">1ч. 10мин.</span><span class="popup__portion">2 порции</span></div>
+              </div>
+              <div class="popup__right"><img src="img/productsInfo__mainImg.jpg" class="popup__img"></div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__left">
+                <div class="popup__h2">Ингредиенты</div>
+                <ul class="popup__list">
+                  <li class="popup__item">4 ст ложки резанного розмарина</li>
+                  <li class="popup__item">1 десертная ложка соли</li>
+                  <li class="popup__item">противень 50х30 см</li>
+                  <li class="popup__item">духовку разогреваем до 230 градусов</li>
+                </ul>
+              </div>
+              <div class="popup__right">
+                <div class="popup__h2">Рецепт приготовления</div>
+                <p class="popup__p">Дольки картофеля обваляем в маслянисто-розмариновой смеси. Масла достаточно! Все дольки смазаны и благоухают))) Выкладываем на лист в один слой</p>
+                <p class="popup__p">Ставим на средний уровень хорошо разогретой духовки и выпекаем 30 минут до золотистой корочки. Мне времени не хватило, за пять минут до конца я переставила противень на верхний уровень и включила духовку на максимум. Картофель получился очень вкусным!</p>
+              </div>
+            </div>
+          </div>
+          <div class="popup__footer">
+            <div class="popup__line"><span class="popup__lineText">Еще рецепты</span></div>
+            <div class="popup__recipe">
+              <div class="popup__recipeTitle">рецепт</div>
+              <div data-popuplink="#potato" class="js-openRecept">
+                <div class="popup__recipeName">Картофель запечённый в&nbsp;сметане</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="btn js-popup js-popup1">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__recipe">
+              <div class="popup__recipeTitle">рецепт</div>
+              <div data-popuplink="#something" class="js-openRecept">
+                <div class="popup__recipeName">Гуляшь на пиве</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg2.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__recipe">
+              <div class="popup__recipeTitle">рецепт</div>
+              <div data-popuplink="#somethingElse" class="js-openRecept">
+                <div class="popup__recipeName">Картофель с&nbsp;розмарином</div>
+                <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
+                  <div class="btn js-popup">Подробнее</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="popup__footer">
-          <div class="popup__line"><span class="popup__lineText">Еще рецепты</span></div>
-          <div class="popup__recipe">
-            <div class="popup__recipeTitle">рецепт</div>
-            <div class="popup__recipeName">Картофель запечённый в&nbsp;сметане</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg1.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div data-popuplink="#potato" class="btn js-popup js-popup1">Подробнее</div>
-            </div>
-          </div>
-          <div class="popup__recipe">
-            <div class="popup__recipeTitle">рецепт</div>
-            <div class="popup__recipeName">Гуляшь на пиве</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg2.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div data-popuplink="#something" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-          <div class="popup__recipe">
-            <div class="popup__recipeTitle">рецепт</div>
-            <div class="popup__recipeName">Картофель с&nbsp;розмарином</div>
-            <div class="infoBlock"><img src="img/productsInfo__mainImg3.jpg" class="infoBlock__mainImg"><span class="infoBlock__span infoBlock__span--clock">1ч. 10мин.</span><span class="infoBlock__span infoBlock__span--right">2 порции</span>
-              <div data-popuplink="#somethingElse" class="btn js-popup">Подробнее</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </button>
+      </button>
+    </div>
     <script>
       var ms=document.createElement("link");ms.rel="stylesheet";
       ms.href="_main.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+      
     </script>
-    <!-- script.-->
-    <!-- 	var scr = {"scripts":[-->
-    <!-- 	{"src" : "js/modernizr.min.js", "async" : false},-->
-    <!-- 	{"src" : "js/vendor.min.js", "async" : false},-->
-    <!-- 	{"src" : "js/main.min.js", "async" : false}-->
-    <!-- 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);-->
+    <!--<script>
+    var scr = {"scripts":[
+    	{"src" : "js/vendor.min.js", "async" : false},
+    	{"src" : "js/main.min.js", "async" : false}
+     ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);</script>
+    
+    -->
     <!-- build:js js/vendor.min.js-->
     <!-- bower:js-->
     <script src="bower/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCu0dsTvLT1N1qBccAcaIyJKGRLPpg0i4&amp;callback=initMap" async defer></script>
+    <script src="js/parallax.js"></script>
     <!-- endbower-->
     <!-- endbuild-->
     
